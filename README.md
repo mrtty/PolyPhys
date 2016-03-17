@@ -1,2 +1,2 @@
 # PolyPhys
-Some projects and exercises in Polymer Physics
+Some projects and notes in Polymer Physics
