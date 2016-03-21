@@ -67,14 +67,16 @@ Take log,
 where $<\cos\phi>$ contains temperature effect.
 So the variation in temperature $T$ becomes
 \[
-\frac{ \log(<r^2>)}{dT} = \frac{1}{1+<\cos \phi>} \frac{d <\cos \phi>}{d T} - \frac{1}{1-<\cos \phi>}\frac{d <\cos \phi>}{d T}
-= \frac{-2<\cos\phi>}{1-<\cos\phi>^2} \frac{d<\cos \phi>}{dT}
+\frac{ \log(<r^2>)}{dT} = \frac{1}{1+<\cos \phi>} \frac{d <\cos \phi>}{d T} + \frac{1}{1-<\cos \phi>}\frac{d <\cos \phi>}{d T}
+= \frac{2}{1-<\cos\phi>^2} \frac{d<\cos \phi>}{dT}
 \]
-By symmetry, $\phi \in (0,\,\pi)$. Since $\exp(-U(\phi)/k_BT)$ in trans ($\phi \approx 0$) is much larger than that of in cis ($\theta \approx \pi$). So we have $<\cos \phi> \: > \: <\cos \phi>|_{\text{near trans, $\phi$ from $0$ to $\pi/3$} } > 0$, and $<\cos\phi>^2 \in (0,\,1)$.
-\[
-    \frac{d<\cos \phi>}{dT} = d/dT \,\int_0^{\pi} \cos\phi \exp(-U(\phi)/k_BT) d\phi = \int_0^{\pi} \cos\phi \exp(-U(\phi)/k_BT) U(\phi) /(k_BT^2) d\phi > 0 
-\]
-without normalization. Thus the temperature coefficient $d\log(r^2)/dT < 0$.
+%By symmetry, $\phi \in (0,\,\pi)$. Since $\exp(-U(\phi)/k_BT)$ in trans ($\phi \approx 0$) is much larger than that of in cis ($\theta \approx \pi$). So we have $<\cos \phi> \: > \: <\cos \phi>|_{\text{near trans, $\phi$ from $0$ to $\pi/3$} } > 0$, and $<\cos\phi>^2 \in (0,\,1)$.
+%\[
+%    \frac{d<\cos \phi>}{dT} = d/dT \,\int_0^{\pi} \cos\phi \exp(-U(\phi)/k_BT) d\phi = \int_0^{\pi} \cos\phi \exp(-U(\phi)/k_BT) U(\phi) /(k_BT^2) d\phi > 0 (<0?)
+%\]
+%without normalization. 
+First we know $<\cos\phi>^2 \in (0,\,1)$, and as $T$ increases, more and more polymer can in the gauge state, implying $\phi$ increases.
+Thus the temperature coefficient $d\log(r^2)/dT < 0$.
 
 
 
