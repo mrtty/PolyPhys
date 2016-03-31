@@ -1,0 +1,10 @@
+before_install:
+- "sudo apt-get update && sudo apt-get install -y --no-install-recommends texlive-fonts-recommended texlive-latex-extra texlive-fonts-extra dvipng texlive-latex-recommended"
+script:
+- mkdir _build
+- pdflatex -output-directory _build HW/HW01.tex
+deploy:
+  file:
+  - _build/HW01.pdf
+  skip_cleanup: true
+
